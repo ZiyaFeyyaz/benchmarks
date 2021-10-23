@@ -2,13 +2,13 @@ require 'benchmark'
 
 class Obj
   attr_accessor :country
-  
+
   SITES = {
     'europe'    => 'http://eu.example.com',
     'america'   => 'http://us.example.com',
     'australia' => 'http://au.example.com'
   }.freeze
-  
+
   def initialize
     @country ||= %w[europe america australia].sample
   end
